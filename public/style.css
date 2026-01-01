@@ -1,0 +1,54 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 230, 213);
+}
+
+.container-posts {
+    background-color: rgb(195, 234, 152);
+    border-radius: 8%;
+    padding: 2%;
+    margin: 1%;
+    display:inline-block;
+    border: 2px solid green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+    text-align: center;
+    color: rgb(123, 49, 49);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #be9839;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
