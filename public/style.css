@@ -4,15 +4,70 @@
     background-color: rgb(244, 230, 213);
 }
 
-.container-posts {
-    background-color: rgb(195, 234, 152);
-    border-radius: 8%;
-    padding: 2%;
-    margin: 1%;
-    display:inline-block;
-    border: 2px solid green;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    background-color: #fff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+/* LEFT SIDE */
+.post-content h2 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.post-content p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* RIGHT SIDE */
+.post-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Links styled as buttons */
+.post-actions a {
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #e5e7eb;
+    color: #111;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.post-actions a:hover {
+    background-color: #d1d5db;
+}
+
+/* Delete button */
+.delete-btn {
+    border: none;
+    padding: 6px 14px;
+    background-color: red;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Prevent form from breaking layout */
+.post-actions form {
+    margin: 0;
+}
+
 
 .heading {
     text-align: center;
@@ -48,7 +103,4 @@
   font-size: 18px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+

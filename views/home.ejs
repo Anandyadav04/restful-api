@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBlog</title>
+    <link rel="stylesheet" href="/home.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <%- include("includes/nav.ejs") %>
-    <h1>welcome to MyBlog</h1>
+      <header>
+        <h1>MyBlog</h1>
+        <p>Read latest posts</p>
+        <a href="/posts/new">Create New Post</a>
+    </header>
+
+    <main>
+        <% if (posts.length === 0) { %>
+            <p>No posts available.</p>
+        <% } %>
+
+        <% posts.forEach(post => { %>
+            <article class="post">
+                <h2><%= post.title %></h2>
+                <p><%= post.content.substring(0, 150) %>...</p>
+
+                <div class="actions">
+                    <a href="/posts/<%= post.id %>">Read More</a>
+                    <a href="/posts/<%= post.id %>/edit">Edit</a>
+
+                    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+            </article>
+        <% }) %>
+    </main>
+
 </body>
 </html>

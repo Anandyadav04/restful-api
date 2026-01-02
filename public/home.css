@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: rgb(244, 230, 213);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 25px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #38bdf8;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: #0ea5e9;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Post Card */
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.post p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.actions a:hover {
+    background-color: #cbd5e1;
+}
+
+/* Delete Button */
+.actions button {
+    border: none;
+    background-color: #ef4444;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.actions button:hover {
+    background-color: #dc2626;
+}
+
+/* Empty message */
+main p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+}
