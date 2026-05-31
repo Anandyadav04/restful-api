@@ -109,24 +109,6 @@ http://localhost:3000
 * Form Handling
 * Server-Side Rendering
 
-## Future Enhancements
-
-* MongoDB Integration
-* User Authentication
-* Comment System
-* Search Functionality
-* Image Uploads
-* API Version
-* Docker Deployment
-
-## Screenshots
-
-Add screenshots of:
-
-* Home Page
-* Posts Listing
-* Create Post Page
-* Edit Post Page
 
 ## Author
 
